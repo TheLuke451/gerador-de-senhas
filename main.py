@@ -20,10 +20,12 @@ if maiusculas == 's' or maiusculas == 'S':
 if minusculas == 's' or minusculas == 'S':
     caracteres += "abcdefghijklmnopqrstuvwxyz"
 
-senha = "".join(secrets.choice(caracteres) for i in range(tamanho_senha))
-print("Senha gerada:", senha)
-
 # Verificação se pelo menos um tipo de caractere foi selecionado
 if not caracteres:
     print("Erro: Nenhum caractere selecionado para a geração da senha.")
     exit()
+
+senha = "".join(secrets.choice(caracteres) for i in range(tamanho_senha))
+print("Senha gerada:", senha)
+
+
