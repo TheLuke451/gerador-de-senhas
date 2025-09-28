@@ -26,4 +26,4 @@ print("Senha gerada:", senha)
 # Verificação se pelo menos um tipo de caractere foi selecionado
 if not caracteres:
     print("Erro: Nenhum caractere selecionado para a geração da senha.")
-    exit(1)
+    exit()
