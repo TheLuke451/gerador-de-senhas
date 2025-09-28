@@ -1,7 +1,6 @@
 # Bibliotecas
 import secrets
 
-
 # Perguntas ao usuário
 tamanho_senha = int(input("Digite o tamanho da senha: "))
 caracteres_especiais = input("Incluir caracteres especiais? (s/n): ")
@@ -23,3 +22,8 @@ if minusculas == 's' or minusculas == 'S':
 
 senha = "".join(secrets.choice(caracteres) for i in range(tamanho_senha))
 print("Senha gerada:", senha)
+
+# Verificação se pelo menos um tipo de caractere foi selecionado
+if not caracteres:
+    print("Erro: Nenhum caractere selecionado para a geração da senha.")
+    exit(1)
